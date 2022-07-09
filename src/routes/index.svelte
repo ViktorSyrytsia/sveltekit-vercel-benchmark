@@ -2,11 +2,11 @@
   import { set_svg_attributes } from "svelte/internal";
 
   // @ts-nocheck
-  export let businesses;
+  export let businesses: any;
   export let start: number;
 </script>
 
-<h1>Welcome to {Date.now() - start}ms</h1>
+<h1>Welcome to {Date.now() - start}ms {JSON.stringify(businesses)}</h1>
 <p>
   Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
